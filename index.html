@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox</title>
+    <script>
+        var ary = [
+           
+        
+            ["samsung","Galexy",64,15000],
+            
+            ["nokia","S730",128,22000],
+            ["xiaomi","Note",32,12000],
+            ["motorala","G10",32,15000],
+            ["apple","S12",64,25000]
+        ];
+        document.write("<table border ='1px' cellspacing ='0'>");
+            document.write("<thead> <tr>");
+                document.write("<th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(Rs)</th>");
+
+        for (var a = 0; a < 5; a++){
+            document.write("<tr>");
+         for (var b = 0; b < 4; b++){
+            document.write ("<td>" + ary[a][b]+ "</td> ");
+         }
+         document.write("</tr>");
+        }
+        document.write("</table>")
+        function calc(){
+            var text=document.getElementById("text").value;
+            var sel=document.getElementById("sel").value;
+             console.log("text "+text);
+             console.log("sel "+sel);
+            var a1={
+                company:"samsung",
+                Model:"Galaxy",
+                Memory: 64,
+                price:15000,
+            };
+            var a2={
+                company:"nokia",
+                Model:"S730",
+                Memory: 128,
+                price:22000,
+            };
+            var a3={
+                company:"xiaomi",
+                Model:"Note",
+                Memory: 32,
+                price:12000,
+            };
+            var a4={
+                company:"motorala",
+                Model:"G10",
+                Memory: 32,
+                price:15000,
+            };
+            var a5={
+                company:"apple",
+                Model:"S12",
+                Memory: 64,
+                price:25000,
+            };
+            var a6={
+                company:"motorala",
+                Model:"G10",
+                Memory: 32,
+                price:15000,
+                company:"xiaomi",
+                Model:"Note",
+                Memory: 32,
+                price:12000,
+
+
+            };
+            var a7={
+                company:"samsung",
+                Model:"Galaxy",
+                Memory: 64,
+                price:15000,
+                company:"apple",
+                Model:"S12",
+                Memory: 64,
+                price:25000,
+
+            };
+            var a8={
+                company:"nokia",
+                Model:"S730",
+                Memory: 128,
+                price:22000,
+
+            };
+            var a9={
+                company:"samsung",
+                Model:"Galaxy",
+                Memory: 64,
+                price:15000,
+                company:"motorala",
+                Model:"G10",
+                Memory: 32,
+                price:15000,
+
+            };
+            var a10={
+                company:"nokia",
+                Model:"S730",
+                Memory: 128,
+                price:22000,
+
+            };
+            var a11={
+                company:"xiaomi",
+                Model:"Note",
+                Memory: 32,
+                price:12000,
+
+            };
+            var a12={
+                company:"apple",
+                Model:"S12",
+                Memory: 64,
+                price:25000,
+
+            };
+
+            if(text=="samsung" && sel=="company"){
+
+                document.getElementById("p1").innerHTML= 'company:' + a1.company + ' ' + '<br>Memory:' +a1.Memory + '' +'<br>price:' + a1.price;
+            }
+            else if(text=="nokia" && sel=="company"){
+                document.getElementById("p1").innerHTML= 'company:' + a2.company + ' ' + '<br>Memory:' +a2.Memory + '' +'<br>price:' + a2.price;
+            
+
+            }
+            else if(text=="xiaomi" && sel=="company"){
+                document.getElementById("p1").innerHTML= 'company:' + a3.company + ' ' + '<br>Memory:' +a3.Memory + '' +'<br>price:' + a3.price;
+        
+
+            }
+            else if(text=="motorala" && sel=="company"){
+                document.getElementById("p1").innerHTML= 'company:' + a4.company + ' ' + '<br>Memory:' +a4.Memory + '' +'<br>price:' + a4.price;
+        
+
+            }
+            else if(text=="apple" && sel=="company"){
+                document.getElementById("p1").innerHTML= 'company:' + a5.company + ' ' + '<br>Memory:' +a5.Memory + '' +'<br>price:' + a5.price;
+        
+
+            }
+            else if(text==32 && sel=="Memory"){
+                document.getElementById("p1").innerHTML= 'company:' + a6.company + ' ' + '<br>Memory:' +a6.Memory + '' +'<br>price:' + a6.price;
+        
+
+            }
+            else if(text==64 && sel=="Memory"){
+                document.getElementById("p1").innerHTML= 'company:' + a7.company + ' ' + '<br>Memory:' +a7.Memory + '' +'<br>price:' + a7.price;
+        
+
+            }
+            else if(text==128 && sel=="Memory"){
+                document.getElementById("p1").innerHTML= 'company:' + a8.company + ' ' + '<br>Memory:' +a8.Memory + '' +'<br>price:' + a8.price;
+        
+
+            }
+            else if(text==15000 && sel=="price"){
+                document.getElementById("p1").innerHTML= 'company:' + a9.company + ' ' + '<br>Memory:' +a9.Memory + '' +'<br>price:' + a9.price;
+        
+
+            }
+            else if(text==22000 && sel=="price"){
+                document.getElementById("p1").innerHTML= 'company:' + a10.company + ' ' + '<br>Memory:' +a10.Memory + '' +'<br>price:' + a10.price;
+        
+
+            }
+            else if(text==12000 && sel=="price"){
+                document.getElementById("p1").innerHTML= 'company:' + a11.company + ' ' + '<br>Memory:' +a11.Memory + '' +'<br>price:' + a11.price;
+        
+            }
+            else if(text==25000 && sel=="price"){
+                document.getElementById("p1").innerHTML= 'company:' + a12.company + ' ' + '<br>Memory:' +a12.Memory + '' +'<br>price:' + a12.price;
+        
+            }
+            else if(text=="Galaxy" && sel=="Model"){
+                document.getElementById("p1").innerHTML= 'company:' + a1.company + ' ' + '<br>Memory:' +a1.Memory + '' +'<br>price:' + a1.price;
+
+            }
+            else if(text=="S730" && sel=="Model"){
+                document.getElementById("p1").innerHTML= 'company:' + a2.company + ' ' + '<br>Memory:' +a2.Memory + '' +'<br>price:' + a2.price;
+
+            }
+            else if(text=="Note" && sel=="Model"){
+                document.getElementById("p1").innerHTML= 'company:' + a3.company + ' ' + '<br>Memory:' +a3.Memory + '' +'<br>price:' + a3.price;
+
+            }
+            else if(text=="G10" && sel=="Model"){
+                document.getElementById("p1").innerHTML= 'company:' + a4.company + ' ' + '<br>Memory:' +a4.Memory + '' +'<br>price:' + a4.price;
+
+            }
+            else if(text=="S12" && sel=="Model"){
+                document.getElementById("p1").innerHTML= 'company:' + a5.company + ' ' + '<br>Memory:' +a5.Memory + '' +'<br>price:' + a5.price;
+
+            }
+
+             else{
+                 document.getElementById("p2").innerHTML="Wong Input";
+         }
+    }
+            
+            
+            
+            
+
+
+            // if(text=="Nokia" && sel=="company"){
+
+            //     document.getElementById("p1").innerHTML= 'company:' + a2.company + ' ' + '<br>Memory:' +a2.Memory + '' +'<br>price ;' + a2.price;
+            // }
+            
+        //     var a3={
+        //         company:"Xiaomi",
+        //         Model:"Note",
+        //         Memory: 32,
+        //         Price:12000,
+        //     };
+        //     if(text=="Xiaomi" && sel=="company"){
+
+        //         document.getElementById("p1").innerHTML= 'company:' + a3.company + ' ' + '<br>Memory:' +a3.Memory + '' +'<br>price ;' + a3.price;
+        //     }
+        //     var a4={
+        //         company:"Motorala",
+        //         Model:"G10",
+        //         Memory: 32,
+        //         Price:15000,
+        //     };
+
+        //     if(text=="Motorala" && sel=="company"){
+
+        //         document.getElementById("p1").innerHTML= 'company:' + a4.company + ' ' + '<br>Memory:' +a4.Memory + '' +'<br>price ;' + a4.price;
+        //     }
+        //     var a5={
+        //         company:"Apple",
+        //         Model:"S12",
+        //         Memory: 64,
+        //         Price:25000,
+        //     };
+        //     if(text=="Apple" && sel=="company"){
+
+        //         document.getElementById("p1").innerHTML= 'company:' + a5.company + ' ' + '<br>Memory:' +a5.Memory + '' +'<br>price ;' + a5.price;
+        //     }
+
+        // }
+
+
+
+        
+    </script>
+</head>
+<body>
+ 
+        <div id="search area">
+            <select name="sel" id="sel">
+                <option>company</option>
+                <option>Model</option>
+                <option>Memory</option>
+                <option>price</option>
+                <input type="text" placeholder="search here" id="text">
+                <button onclick="calc()">search</button>
+            </div>
+
+            </select>
+            <p id="p1"></p>
+            <p id="p2"></p>
+        </div>
+
+        
+    
+    
+    
+</body>
+</html>
